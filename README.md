@@ -7,10 +7,10 @@ It stops multiple writers from writing into the same file.
 How to run on Windows machine\
 \
 mkdir -p bin/\
-cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c src/read_main.cpp\
-cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c src/write_main.cpp\
-cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c src/update_main.cpp\
-cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c src/state_functions.cpp\
+cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c read_main.cpp\
+cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c write_main.cpp\
+cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c update_main.cpp\
+cl /D_USING_V110_SDK71_ /EHsc /Fobin/ /c state_functions.cpp\
 cl /EHsc bin/state_functions.obj bin/write_main.obj /Febin/write_main.exe\
 cl /EHsc bin/state_functions.obj bin/read_main.obj /Febin/read_main.exe\
 cl /EHsc bin/state_functions.obj bin/update_main.obj /Febin/update_main.exe\
